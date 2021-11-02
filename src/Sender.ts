@@ -110,7 +110,7 @@ export class Sender {
         if (this.socket) {
             return;
         }
-        this.socket = io("http://192.168.0.145:8080");
+        this.socket = io("https://generative-sensors.herokuapp.com/");
 
         this.socket.on("connect", () => {
             console.log("[Socket] connected");
