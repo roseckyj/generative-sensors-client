@@ -43,3 +43,11 @@ html,
 .accepted {
     color: #606060;
 }
+
+.status div::before {
+    content: "[  ] ";
+}
+
+.status div.accepted::before {
+    content: "[OK] ";
+}
